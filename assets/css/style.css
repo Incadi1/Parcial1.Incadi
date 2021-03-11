@@ -5,49 +5,59 @@
 body {
     padding: 0 0 0rem 0;
     background-color: rgb(226, 225, 225);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 /*---------------------------------*/
 /*-- -------------------------- --*/
-.i-bac{
-    display: flex;
-    justify-content: space-between;
-    padding: 5rem 2rem;
-    align-items:center;
-    height: 10rem;
-    background-color: blue;
-    width: 100%;    /*  al poner un Div CONTENEDOR con 100% de width y height , hacemos que la informacion no se salga de ese div, tambien sirve poner min width o min height*/
-    height: 100%;
-}
+
 /*-- -------------------------- --*/
 
 /*-- -------------------------- --*/
 /*-- header --*/
 .i-header{
     margin: auto ;
+    background-color: cadetblue;
+}
+.header{
+   display: flex;
+   justify-content: center;
+   width: 80%;
+   height: 5rem;
+   flex-direction: row;
 }
 
-.i-logo, .i-menu, .i-txLink{
+
+header .inner{
+   display: flex;
+   justify-content: space-around;
+
+   margin-left: 9rem;
+   flex-direction: row;
+}
+.i-logo, .i-txLink{
     color: #ffffff;
-}
-
-.i-menu{
-    position: absolute;
-    right: 2%;
-}
-
-.i-logo{
     position: absolute;
     left: 10%; 
+}ç
+.i-logo{
+    position: absolute;
+    left: 2%; 
+}
+
+.i-text{
+    position: absolute;
+    right: 10%; 
+    color: #ffffff;
 }
 /*-- -------------------------- --*/
 
 /*-- -------------------------- --*/
 /*-- banner --*/
-.o-txBan{
+.i-txBan{
     width: 100%;
     height: 100%;
     position: relative;
-    text-align: right;
+    text-align: center;
     color: #ffffff;
     top:50%;
     z-index: 1;
@@ -55,7 +65,6 @@ body {
 
 
 /* -- Highlights --*/
-
 .i-txSec{
     width: 100%;
     height: 100%;
@@ -83,8 +92,104 @@ body {
 
 
 
-.i-wrapper{
+.i-banner{
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+#banner{
+    margin-top: 5rem;
+}
+
+.nav{
+    display: flex;
+    justify-content: right;
+    position: obsolute;
+}
+.imagenB{
+
+    width: 200vh;
+    height: 18rem;
+    position: relative;
+
+}
+
+/* -------------------*/
+
+.i-container2{
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+
+
+}
+
+.i-imgR{
+    width:200px;
+    height:200px;
+    border-radius:150px;
+}
+.inner3{
+    width: 80%;
+    height: 27rem;
+
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+
+}
+.flex-2{
+    width: 75%;
+    height: 30rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+.i-pick{
+    width: 30rem;
+    height: 28rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p{
+    color: black;
+    align-items: center;
+}
+
+h3{
+    color: black;
+}
+
+#footer{
+    width: 100%;
+    height: 40rem;
+    background-color: rgb(94, 180, 130);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    border-color: rgb(94, 180, 130);
+    /*background-color: rgba(196, 196, 196, 0);*/
+    background-color: rgba(255, 255, 255, 0.459);
+    width: 60px;
+    border-radius: 50px;
+    color: rgb(94, 180, 130);
+    font-size: 10px;
+    padding: 10px 30px;
+  
+    
+}
+
+.textos{
+    position: absolute;
+    margin-left: 25rem;
+    margin-top: 1rem;
+    font-size: 0.5rem;
+    
 }
